@@ -137,6 +137,12 @@ Java8에서는 Lambda식, Stream API, Optional, 날짜 시간 API, StringJoiner 
 
 lambda는 함수형 프로그래밍을 지원하기 위한 기능이고, Stream API는 고차함수를 지원합니다. Optional은 Null-safey를 제공하며, Stream과 사용법이 유사합니다. 날짜 시간 API는 Joda-time 등의 라이브러리에서 영향을 받아 괜찮은 API가 되었으며, StringJoiner는 문자열을 간단하게 구분자로 합칠 수 있는 기능을 제공합니다.
 
+## Checked Exception과 Unchecked Exception에 대해 설명해주세요.
+
+체크 예외(Checked Exception) 체크 예외는 RuntimeException의 하위 클래스가 아니면서 Exception 클래스의 하위 클래스들입니다. 체크 예외의 특징은 반드시 에러 처리를 해야하는 특징(try/catch or throw)을 가지고 있습니다.
+
+언체크 예외(Unchecked Exception) 언체크 예외는 RuntimeException의 하위 클래스들을 의미합니다. 이것은 체크 예외와는 달리 에러 처리를 강제하지 않습니다. 말 그대로 실행 중에(runtime) 발생할 수 있는 예외를 의미합니다.
+
 ## try-with-resource에 대해서 설명해주세요.
 
 try-with-resources는 자바 버전7에 도입된 문법입니다.
